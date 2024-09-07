@@ -1,5 +1,4 @@
 // utils.js
-// utils.js
 
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js";
@@ -13,6 +12,7 @@ import {
 
 const API_KEY = process.env.API_KEY;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+<<<<<<< HEAD
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -23,10 +23,21 @@ const firebaseConfig = {
   measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
+=======
+>>>>>>> 1daa138 (sighs)
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+};
 
 // Initialize Firebase app
 const app = initializeApp(firebaseConfig);
