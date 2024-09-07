@@ -12,7 +12,6 @@ import {
 
 const API_KEY = process.env.API_KEY;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-<<<<<<< HEAD
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
   authDomain: process.env.FIREBASE_AUTH_DOMAIN,
@@ -22,9 +21,6 @@ const firebaseConfig = {
   appId: process.env.FIREBASE_APP_ID,
   measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
-
-=======
->>>>>>> 1daa138 (sighs)
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
