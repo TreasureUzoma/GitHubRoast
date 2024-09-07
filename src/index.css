@@ -1,13 +1,98 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lexend&display=swap);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  text-decoration: none;
+  font-family: Poppins;
+  outline: none;
+}
+body {
+  background-color: #020818;
+  color: #F9FAFC;
+  font-family: Poppins;
+}
+nav {
+  padding: 20px 30px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(6, 20, 23, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: Lexend;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  right: 0 ;
+  background-color: transparent;
+}
+nav svg {
+  width: 2rem;
+  height: 2rem;
+}
+nav span {
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  font-weight: bold;
+  font-family: Lexend;
+}
+main  .content {
+  text-align: center;
+  margin: 8rem 0 0 0;
+}
+form {
+  margin: 0 20px;
+}
+.content button {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #F9FAFC;
+  font-size: 0.8rem;
+  margin: 1rem 0;
+  color: #12192A;
+  border-radius: 10px;
+  padding: 12px 40px;
+}
+.content input[type=text] {
+  background: transparent;
+  color: #f3f3f3;
+  border-radius: 10px;
+  border: 1px solid #353B4B;
+  padding: 12px 18px;
+}
+.roast-result {
+  border: 1px solid #353B4B;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.roast-result small {
+  color: #ddd;
+}
+.roast-result .user {
+  font-size: 0.8rem;
+}
+.roast-result p {
+  line-height: 1.4rem;
+  font-size: 0.85rem;
+}
+.roast-result img {
+  width: 40px;
+  border-radius: 65px;
+}
+.roast-result .ad {
+  float: right;
+  text-align: right;
+  font-size: 0.8rem;
+}
+#profileResultWrap {
+  display: none;
+}
+footer {
+  
+  margin-top: 5rem;
+}
+footer a {
+  color: #fff;
 }
